@@ -1,17 +1,30 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+// var dotenv = require('dotenv');
+// const morgan = require('morgan');
+// const bodyparser = require("body-parser");
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
+// log request
+// app.use(morgan('tiny'));
 
-var app = express();
+// parse request to body-parser
+// app.use(bodyparser.urlencoded({extended: true}))
+
+const app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+// app.set('view engine', 'html');
+app.use('/css', express.static(path.resolve(__dirname,"assets/css")))
+app.use('/img', express.static(path.resolve(__dirname,"assets/img")))
+app.use('/js', express.static(path.resolve(__dirname,"assets/js")))
 
 app.use(logger('dev'));
 app.use(express.json());

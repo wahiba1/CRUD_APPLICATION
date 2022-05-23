@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -11,6 +11,19 @@
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "mongoose": "^6.3.4",
     "morgan": "~1.9.1"
-  }
+  },
+  "description": "��#\u0000 \u0000C\u0000R\u0000U\u0000D\u0000_\u0000A\u0000P\u0000P\u0000L\u0000I\u0000C\u0000A\u0000T\u0000I\u0000O\u0000N\u0000\r\u0000 \u0000",
+  "main": "crud application with express and mongodb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wahiba1/CRUD_APPLICATION.git"
+  },
+  "author": "wahiba akram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wahiba1/CRUD_APPLICATION/issues"
+  },
+  "homepage": "https://github.com/wahiba1/CRUD_APPLICATION#readme"
 }
